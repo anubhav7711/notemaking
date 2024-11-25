@@ -1,0 +1,60 @@
+.notebook {
+    > .chapt {
+      color: white;
+      width: 100%;
+      display: flex;
+      font-weight: 500;
+      font-size: 18px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      margin: 5px 0px;
+      outline: none;
+    }
+    .chapt:hover{
+      background-color: rgba(0, 0, 0, 0.119);
+    }
+  
+    svg {
+      height: 15px;
+      transition: transform 0.3s ease;
+    }
+  
+    border-bottom: 1px solid white;
+  
+    > ul {
+      max-height: 0;
+      overflow: hidden;
+      padding-left: 20px;
+      transition: max-height 0.3s ease;
+      >hr{
+        background-color: rgba(0, 0, 0, 0.269);
+        color: rgba(0, 0, 0, 0.269);
+        height: 1px;
+      }
+    }
+  
+    &.open {
+      > ul {
+        max-height: 1000px;
+      }
+    }
+  }
+.addchapter{ 
+    display: flex;
+    gap: 5px;
+    margin: 10px 0px;
+    >input{
+        width: 80%;
+        margin-left: 20px;
+        border-radius: 10px;
+        padding: 0px 5px;
+    }
+    >button{
+        border-radius: 10px;
+        background-color: rgba(4, 255, 0, 0.808);
+        padding: 10px;
+    }
+}

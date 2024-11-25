@@ -1,0 +1,39 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    // background-image: linear-gradient(to bottom,blue,rgb(0, 0, 174), rgb(0, 0, 106));
+    background-color: #0766AD;
+    width: 300px;
+    height: 87vh;
+    overflow-y: auto;
+    // box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.37);
+    padding: 20px;
+    .addnotebook{
+        width: 100%;
+        background-color: rgba(4, 255, 0, 0.808);
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        >svg{
+            height: 20px;
+            margin: 0px 10px;
+        }
+    }
+}
+
+
+@media (max-width: 600px) {
+   .sidebar{
+    position: absolute;
+    z-index: 1;
+    left: -280px;
+    transition: all 0.3s ease;
+   }
+   .sidebar:hover{
+    left: 0px;
+   }
+}
+
